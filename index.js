@@ -15,4 +15,12 @@ function getCount(str){
     return vowelsCount;
 
 }
-console.log(getCount('hELLo WorlD'))
+console.log(getCount('programming'))
+//problem 3
+function isPalindrome(str){
+    const lowerString = str.toLowerCase();
+    const reversedStr = lowerString.split("").reverse().join('')
+    return lowerString === reversedStr
+}
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("hello")); 
