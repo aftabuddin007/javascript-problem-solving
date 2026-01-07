@@ -25,13 +25,25 @@
 // console.log(isPalindrome("madam")); 
 // console.log(isPalindrome("hello")); 
 // problem 4
-function getMaxNumber(arr){
-    let max = arr[0]
-    for(let i =1;i<arr.length;i++){
-        if(arr[i] > max){
-            max = arr[i];
-        }
-    }
-    return max;
-}
-console.log(getMaxNumber([3,9,1,4,0]))
+// function getMaxNumber(arr){
+//     let max = arr[0]
+//     for(let i =1;i<arr.length;i++){
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//     }
+//     return max;
+// }
+// console.log(getMaxNumber([3,9,1,4,0]))
+// problem 5
+// function duplicateArray(arr){
+//     let result = [];
+//     for(let num of arr){
+//         if(!result.includes(num)){
+//             result.push(num)
+//         }
+
+//     }
+//     return result
+// }
+// console.log(duplicateArray([1,2,2,34,4,5]))
