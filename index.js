@@ -68,14 +68,23 @@
 // }
 // console.log(findEvenNum([1,2,3,4,5,6]))
 // problem 8
-function capitalizeWord(str){
-    const words = str.split('')
-    let result = []
-    for (let w of words){
-        const capitalWord = w[0].toUpperCase()+w.slice(1)
-        result.push(capitalWord)
-    }
-    return result.join('')
+// function capitalizeWord(str){
+//     const words = str.split('')
+//     let result = []
+//     for (let w of words){
+//         const capitalWord = w[0].toUpperCase()+w.slice(1)
+//         result.push(capitalWord)
+//     }
+//     return result.join('')
 
+// }
+// console.log(capitalizeWord('hello world'))
+function factorial(num){
+    let result = 1
+    for(let i=1;i<=num;i++){
+        result *= i;
+
+    }
+    return result;
 }
-console.log(capitalizeWord('hello world'))
+console.log(factorial(5))
