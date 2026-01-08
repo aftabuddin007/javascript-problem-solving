@@ -57,13 +57,25 @@
 // }
 // console.log(sumArray([1,2,3,4]))
 // problem 7
-function findEvenNum(arr){
-    let number = [];
-    for(let n of arr){
-        if(n%2 ===0){
-            number.push(n)
-        }
+// function findEvenNum(arr){
+//     let number = [];
+//     for(let n of arr){
+//         if(n%2 ===0){
+//             number.push(n)
+//         }
+//     }
+//     return number;
+// }
+// console.log(findEvenNum([1,2,3,4,5,6]))
+// problem 8
+function capitalizeWord(str){
+    const words = str.split('')
+    let result = []
+    for (let w of words){
+        const capitalWord = w[0].toUpperCase()+w.slice(1)
+        result.push(capitalWord)
     }
-    return number;
+    return result.join('')
+
 }
-console.log(findEvenNum([1,2,3,4,5,6]))
+console.log(capitalizeWord('hello world'))
